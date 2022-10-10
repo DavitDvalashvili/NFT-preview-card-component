@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #0d192c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 327px;
+    height: 543px;
+    border-radius: 15px;
+    background-color: #15263F;
+    padding: 24px 25px 24px 24px;
+}
+#image-container {
+    position: relative;
+    width:278px;
+    height:278px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color:  #FFFFFF;
+    margin: 24px 0 12px 0;
+}
+p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #8BACD9;
+    margin-bottom: 16px;
+}
+.price-time :nth-child(n) {
+    display: inline-block;
+    vertical-align: middle;
+}
+#etherium-icon {
+    width: 11px;
+    height: 18px;
+    margin-right: 6.49px;
+}
+span{
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.price {
+    font-weight: 600;
+    color: #00FFF8;
+}
+.time-reminder {
+    font-weight: 400;
+    color: #8BACD9;
+}
+#time-icon {
+    width: 13.33px;
+    height: 13.33px;
+    margin-left: 20px;
+    margin-left: 95px;
+}
+.divider {
+    width: 278px;
+    height: 1px;
+    background-color: #2E405A;
+    margin: 16px 0;
+}
+.author span {
+    font-weight: 400;
+    color: #8BACD9;
+    vertical-align: middle;
+}
+#avatar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 33px;
+    height: 33px;
+    margin-right: 16px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+.author :nth-child(3) {
+    color: #FFFFFF;
+    margin-left: 5px; 
+} 
+.author :nth-child(3):hover, h1:hover {
+    color: #00FFF8;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#layer {
+    position: absolute;
+    width:278px;
+    height:278px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #00FFF8;
+    opacity: 0.5;
+    border-radius: 8px;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.view-icon {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    display: none;
+}
+#image-container:hover .view-icon{
+    display: block;
+    transition: 2s ease;
+}
+
+#image-container:hover #layer {
+ display: block;
+ cursor: pointer;
+ transition: 2s ease;
+}
